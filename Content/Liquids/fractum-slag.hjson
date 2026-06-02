@@ -1,0 +1,8 @@
+{
+  type: Liquid
+  color: "ffa166"
+  temperature: 1.0
+  viscosity: 0.7
+  effect: melting
+  lightColor: "f0511d66"
+}

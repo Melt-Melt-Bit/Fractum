@@ -1,0 +1,6 @@
+{
+  type: Item
+  color: "7457ce"
+  flammability: 1.15
+  buildable: false
+}

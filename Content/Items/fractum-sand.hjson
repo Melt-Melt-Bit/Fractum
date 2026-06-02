@@ -1,0 +1,7 @@
+{
+  type: Item
+  color: "f7cba4"
+  lowPriority: true
+  buildable: false
+  alwaysUnlocked: true
+}

@@ -1,0 +1,9 @@
+{
+  type: Liquid
+  color: "596ab8"
+  heatCapacity: 0.4
+  boilPoint: 0.5
+  gasColor: "e6e6e6"
+  alwaysUnlocked: true
+  effect: wet
+}

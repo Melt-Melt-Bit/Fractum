@@ -1,0 +1,7 @@
+{
+  type: Item
+  color: "ffaa5f"
+  flammability: 1.4
+  explosiveness: 0.4
+  buildable: false
+}

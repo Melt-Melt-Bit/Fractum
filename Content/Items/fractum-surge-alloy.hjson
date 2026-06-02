@@ -1,0 +1,7 @@
+{
+  type: Item
+  color: "f3e979"
+  cost: 1.2
+  charge: 0.75
+  healthScaling: 0.25
+}
