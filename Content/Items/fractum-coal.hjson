@@ -1,7 +1,7 @@
 {
   type: Item
   color: "272727"
-  explosiveness: 0.2
+  explosiveness: 0.3
   flammability: 1.0
   hardness: 2
   buildable: false
