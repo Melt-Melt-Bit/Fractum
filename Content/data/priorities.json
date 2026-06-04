@@ -1,0 +1,85 @@
+{
+  "priorities": [
+    {
+      "id": 1,
+      "name": "Extraction",
+      "buildList": [
+        { "type": "atrum-drill",     "target": "ferrite-node",  "count": 2 },
+        { "type": "atrum-drill",     "target": "saltite-node",  "count": 1 },
+        { "type": "atrum-conveyor",  "target": "core-link",     "count": -1 },
+        { "type": "atrum-junction",  "target": "buffer",        "count": 1 }
+      ],
+      "defenseBuilt": false,
+      "transitionCondition": "allDrillsActive",
+      "threatLevel": "low"
+    },
+    {
+      "id": 2,
+      "name": "Perimeter",
+      "buildList": [
+        { "type": "atrum-wall",      "target": "core-ring",     "count": -1 },
+        { "type": "atrum-wall",      "target": "drill-ring",    "count": -1 },
+        { "type": "atrum-turret",    "target": "approach",      "count": 2  },
+        { "type": "atrum-mender",    "target": "turret-cover",  "count": 1  }
+      ],
+      "defenseBuilt": true,
+      "transitionCondition": "perimeterSealed",
+      "threatLevel": "medium"
+    },
+    {
+      "id": 3,
+      "name": "Production",
+      "buildList": [
+        { "type": "atrum-factory",   "target": "main-base",     "count": 2  },
+        { "type": "atrum-drill",     "target": "sulfurite-node","count": 1  },
+        { "type": "atrum-conveyor",  "target": "factory-link",  "count": -1 },
+        { "type": "atrum-vent-reactor", "target": "vent-zone",  "count": 1  }
+      ],
+      "defenseBuilt": false,
+      "transitionCondition": "factoryOperational",
+      "threatLevel": "high"
+    },
+    {
+      "id": 4,
+      "name": "Reinforce",
+      "buildList": [
+        { "type": "atrum-drill",     "target": "upgrade-p1",    "count": -1 },
+        { "type": "atrum-wall",      "target": "upgrade-p2",    "count": -1 },
+        { "type": "atrum-turret",    "target": "drill-defense", "count": -1 },
+        { "type": "atrum-mender",    "target": "drill-cover",   "count": -1 }
+      ],
+      "defenseBuilt": true,
+      "transitionCondition": "allStructuresLevel2",
+      "threatLevel": "medium-high"
+    },
+    {
+      "id": 5,
+      "name": "Expansion",
+      "buildList": [
+        { "type": "atrum-outpost",   "target": "midmap-node-1", "count": 1  },
+        { "type": "atrum-outpost",   "target": "midmap-node-2", "count": 1  },
+        { "type": "atrum-outpost",   "target": "midmap-node-3", "count": 1  },
+        { "type": "atrum-conveyor",  "target": "outpost-link",  "count": -1 }
+      ],
+      "defenseBuilt": true,
+      "transitionCondition": "allOutpostsEstablished",
+      "threatLevel": "very-high"
+    }
+  ],
+
+  "rebuildCostMultipliers": {
+    "1": 1.5,
+    "2": 2.0,
+    "3": 3.0,
+    "4": 4.5,
+    "5": 1.0
+  },
+
+  "siegeMode": {
+    "waveFrequencyMultiplier": 2.5,
+    "unitTierMin": 4,
+    "ventReactorOverclock": true,
+    "rebuildSpeedMultiplier": 2.0,
+    "fullAggression": true
+  }
+}
